@@ -4,7 +4,8 @@
 /node_modules
 /.pnp
 .pnp.js
-
+shop.iml
+/.idea
 # testing
 /coverage
 
