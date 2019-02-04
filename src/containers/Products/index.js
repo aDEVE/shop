@@ -24,12 +24,13 @@ class Products extends Component {
             products.map(p => {
               return (
                 <Card
-                  key={p.name}
-                  img={p.img}
-                  name={p.name}
                   description={p.description}
-                  price={p.price}
+                  id={p.id}
+                  img={p.img}
+                  key={p.name}
+                  name={p.name}
                   onClick={() => this.handleClick(p.id)}
+                  price={p.price}
                 />
               )
             })}
@@ -41,11 +42,11 @@ class Products extends Component {
 
 Products.propTypes = {
   addToCart: PropTypes.func.isRequired,
-  products: PropTypes.object,
+  products: PropTypes.array,
 }
 
 Products.defaultProps = {
-  products: {},
+  products: [],
 }
 
 const mapStateToProps = state => ({

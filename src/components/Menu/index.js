@@ -12,8 +12,8 @@ class Menu extends PureComponent {
 
     return (
       <Container>
-        <Link to="/">Products</Link>
-        <Link to="/cart" style={{ marginLeft: '15px' }}>
+        <Link className="product-link" to="/">Products</Link>
+        <Link className="cart-link" to="/cart" style={{ marginLeft: '15px' }}>
           Cart {isNotEmpty && `( ${quantities} )`}
         </Link>
       </Container>

@@ -6,7 +6,7 @@ import { BigText, Text } from '../Typographies'
 
 class Card extends PureComponent {
   render() {
-    const { alt, description, img, name, onClick, price } = this.props
+    const { alt, description, id, img, name, onClick, price } = this.props
     return (
       <Wrapper>
         <WrapperImg>
@@ -16,9 +16,10 @@ class Card extends PureComponent {
         <Text>{description}</Text>
         <WrapperBottom>
           <span>{price}$</span>
-          <Button onClick={onClick}>
+          <Button className={ `add-to-cart-${id}` } onClick={onClick}>
             <IconCart style={{ fill: 'white', width: '16px', height: '16px' }} />
           </Button>
+
         </WrapperBottom>
       </Wrapper>
     )
@@ -27,6 +28,7 @@ class Card extends PureComponent {
 Card.propTypes = {
   alt: PropTypes.string,
   description: PropTypes.string,
+  id: PropTypes.number,
   img: PropTypes.string,
   name: PropTypes.string,
   onClick: PropTypes.func,
@@ -36,6 +38,7 @@ Card.propTypes = {
 Card.defaultProps = {
   alt: '',
   description: '',
+  id: null,
   img:
     'https://s1.lmcdn.fr/multimedia/ee1500048925/1b4e1570b569b/produits/carrelage-sol-gris-effet-beton-alma-l-45-x-l-45-cm.jpg?$p=hi-w795',
   name: '',

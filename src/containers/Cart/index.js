@@ -31,6 +31,7 @@ class Cart extends Component {
         {!hasProduct && <Empty />}
         {products.map(p => (
           <Card
+            className="item-cart"
             key={p.name}
             description={p.description}
             name={p.name}
@@ -42,7 +43,7 @@ class Cart extends Component {
         ))}
         <WrapperBottom>
           {hasProduct && <Text>TOTAL : {total} </Text>}
-          {hasProduct && <Button onClick={this.handleClickClear}>Clear Cart</Button>}
+          {hasProduct && <Button className="clear-cart" onClick={this.handleClickClear}>Clear Cart</Button>}
         </WrapperBottom>
       </div>
     )

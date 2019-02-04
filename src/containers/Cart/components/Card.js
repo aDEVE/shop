@@ -6,9 +6,9 @@ import Button from '../../../components/Button'
 
 class Card extends Component {
   render() {
-    const { description, img, name, onClick, price, quantity } = this.props
+    const { className, description, img, name, onClick, price, quantity } = this.props
     return (
-      <WrapperCard>
+      <WrapperCard className={className}>
         <div style={{ display: 'flex' }}>
           <Img src={img} alt={name} />
           <WrapperVertical>
@@ -28,6 +28,7 @@ class Card extends Component {
 }
 
 Card.propTypes = {
+  className: PropTypes.string,
   description: PropTypes.string,
   img: PropTypes.string,
   name: PropTypes.string,
@@ -37,6 +38,7 @@ Card.propTypes = {
 }
 
 Card.defaultProps = {
+  className: null,
   description: null,
   img: null,
   name: null,
