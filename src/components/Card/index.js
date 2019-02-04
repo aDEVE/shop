@@ -16,10 +16,9 @@ class Card extends PureComponent {
         <Text>{description}</Text>
         <WrapperBottom>
           <span>{price}$</span>
-          <Button className={ `add-to-cart-${id}` } onClick={onClick}>
+          <Button className={`add-to-cart-${id}`} onClick={onClick}>
             <IconCart style={{ fill: 'white', width: '16px', height: '16px' }} />
           </Button>
-
         </WrapperBottom>
       </Wrapper>
     )

@@ -43,7 +43,11 @@ class Cart extends Component {
         ))}
         <WrapperBottom>
           {hasProduct && <Text>TOTAL : {total} </Text>}
-          {hasProduct && <Button className="clear-cart" onClick={this.handleClickClear}>Clear Cart</Button>}
+          {hasProduct && (
+            <Button className="clear-cart" onClick={this.handleClickClear}>
+              Clear Cart
+            </Button>
+          )}
         </WrapperBottom>
       </div>
     )

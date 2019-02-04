@@ -23,6 +23,21 @@
    yarn start
    ```
    
+## Test 
+
+There is a scenario of test implemented with cypress. To open it run : 
+
+```bash
+    yarn cypress
+```
+
+A window will be open, you have to click on `Run all specs`, do not forget
+to have api running with at the root of project : 
+
+```bash
+    json-server --watch db.json
+```
+
    
    
    

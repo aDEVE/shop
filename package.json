@@ -71,7 +71,8 @@
     "build": "node scripts/build.js",
     "test": "node scripts/test.js",
     "lint": "eslint --cache src",
-    "prettier": "prettier --write \"+(bin|src)/**/*.?(js|json|md)\""
+    "prettier": "prettier --write \"+(bin|src)/**/*.?(js|json|md)\"",
+    "cypress": "cypress open"
   },
   "eslintConfig": {
     "extends": "react-app"
