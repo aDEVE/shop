@@ -4,6 +4,7 @@ module.exports = {
   parser: 'babel-eslint',
   
   rules: {
+    'no-console': 2,
     'array-bracket-spacing': [2, 'always'],
     'arrow-body-style': [2, 'as-needed'],
     'arrow-parens': 0,
@@ -19,7 +20,6 @@ module.exports = {
     'new-cap': 0,
     'no-case-declarations': 0,
     'no-confusing-arrow': 0,
-    'no-console': 2,
     'no-extra-boolean-cast': 0,
     'no-lonely-if': 0,
     'no-mixed-operators': 0,

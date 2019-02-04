@@ -4,5 +4,8 @@
     "./.eslint-rules.js",
     "prettier",
     "prettier/react"
-  ]
+  ],
+  "rules": {
+    "no-console": 0
+  }
 }

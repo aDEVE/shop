@@ -8,7 +8,8 @@ shop.iml
 /.idea
 # testing
 /coverage
-
+.eslintcache
+db.json
 # production
 /build
 
