@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import { addToCart } from '../../actions'
 import { getVisibleProducts } from '../../reducers/products'
+import { Title } from '../../components/Typographies'
 import Card from '../../components/Card'
 import Wrapper from './styles/Wrapper'
 
@@ -17,7 +18,7 @@ class Products extends Component {
 
     return (
       <Fragment>
-        LIST OF PRODUCT
+        <Title>LIST OF PRODUCT</Title>
         <Wrapper>
           {products &&
             products.map(p => {

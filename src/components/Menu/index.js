@@ -1,10 +1,9 @@
 import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
-import { Link } from 'react-router-dom'
 import { getQuantities } from '../../reducers'
 
-import { Container } from './styles'
+import { Container, Link } from './styles'
 
 class Menu extends PureComponent {
   render() {

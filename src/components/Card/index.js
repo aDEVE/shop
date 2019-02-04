@@ -1,15 +1,8 @@
 import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
-import {
-  Button,
-  Description,
-  IconCart,
-  Img,
-  Title,
-  Wrapper,
-  WrapperBottom,
-  WrapperImg,
-} from './styles'
+import { IconCart, Img, Wrapper, WrapperBottom, WrapperImg } from './styles'
+import Button from '../Button'
+import { BigText, Text } from '../Typographies'
 
 class Card extends PureComponent {
   render() {
@@ -19,12 +12,12 @@ class Card extends PureComponent {
         <WrapperImg>
           <Img src={img} alt={alt} />
         </WrapperImg>
-        <Title>{name}</Title>
-        <Description>{description}</Description>
+        <BigText>{name}</BigText>
+        <Text>{description}</Text>
         <WrapperBottom>
           <span>{price}$</span>
           <Button onClick={onClick}>
-            <IconCart style={{ width: '16px', height: '16px' }} />
+            <IconCart style={{ fill: 'white', width: '16px', height: '16px' }} />
           </Button>
         </WrapperBottom>
       </Wrapper>

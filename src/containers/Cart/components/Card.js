@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { Img, WrapperCard, WrapperVertical } from '../styles'
+import { BigText, Text } from '../../../components/Typographies'
+import Button from '../../../components/Button'
 
 class Card extends Component {
   render() {
@@ -10,17 +12,15 @@ class Card extends Component {
         <div style={{ display: 'flex' }}>
           <Img src={img} alt={name} />
           <WrapperVertical>
-            <span>{name}</span>
-            <p>{description}</p>
+            <BigText>{name}</BigText>
+            <Text>{description}</Text>
           </WrapperVertical>
         </div>
         <WrapperVertical>
-          <span>
+          <Text>
             {price}$ (x{quantity})
-          </span>
-          <button onClick={onClick} type="button">
-            delete
-          </button>
+          </Text>
+          <Button onClick={onClick}>delete</Button>
         </WrapperVertical>
       </WrapperCard>
     )

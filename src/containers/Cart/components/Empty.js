@@ -1,8 +1,9 @@
 import React, { PureComponent } from 'react'
+import { Text } from '../../../components/Typographies'
 
 class Empty extends PureComponent {
   render() {
-    return <span> CART IS EMPTY</span>
+    return <Text>Your cart is empty at the moment. </Text>
   }
 }
 

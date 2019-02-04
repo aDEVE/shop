@@ -4,8 +4,11 @@ import { connect } from 'react-redux'
 import { isEmpty } from 'lodash'
 import { clearCart, deleteItemCart } from '../../actions'
 import { getCartProducts, getTotal } from '../../reducers'
+import { Text, Title } from '../../components/Typographies'
+import Button from '../../components/Button'
 import Empty from './components/Empty'
 import Card from './components/Card'
+import { WrapperBottom } from './styles'
 
 class Cart extends Component {
   handleClickClear = () => {
@@ -24,6 +27,7 @@ class Cart extends Component {
 
     return (
       <div>
+        <Title>Your Cart</Title>
         {!hasProduct && <Empty />}
         {products.map(p => (
           <Card
@@ -36,12 +40,10 @@ class Cart extends Component {
             quantity={p.quantity}
           />
         ))}
-        {hasProduct && <span>TOTAL : {total} </span>}
-        {hasProduct && (
-          <button onClick={this.handleClickClear} type="button">
-            Clear Cart
-          </button>
-        )}
+        <WrapperBottom>
+          {hasProduct && <Text>TOTAL : {total} </Text>}
+          {hasProduct && <Button onClick={this.handleClickClear}>Clear Cart</Button>}
+        </WrapperBottom>
       </div>
     )
   }

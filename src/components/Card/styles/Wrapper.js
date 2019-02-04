@@ -7,5 +7,6 @@ export default styled.div`
   border-radius: 3px;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   margin: 2px;
 `

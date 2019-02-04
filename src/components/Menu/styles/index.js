@@ -1,3 +1,4 @@
 import Container from './Container'
+import Link from './Link'
 
-export { Container }
+export { Container, Link }
