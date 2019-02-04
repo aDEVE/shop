@@ -7,7 +7,6 @@ import Card from '../../components/Card'
 import Wrapper from './styles/Wrapper'
 
 class Products extends Component {
-
   handleClick = id => {
     const { addToCart } = this.props
     addToCart && addToCart(id)

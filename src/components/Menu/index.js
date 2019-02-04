@@ -14,7 +14,9 @@ class Menu extends PureComponent {
     return (
       <Container>
         <Link to="/">Products</Link>
-        <Link to="/cart">Cart {isNotEmpty && `( ${quantities} )`}</Link>
+        <Link to="/cart" style={{ marginLeft: '15px' }}>
+          Cart {isNotEmpty && `( ${quantities} )`}
+        </Link>
       </Container>
     )
   }
@@ -32,6 +34,4 @@ const mapStateToProps = state => ({
   quantities: getQuantities(state),
 })
 
-export default connect(
-  mapStateToProps,
-)(Menu)
+export default connect(mapStateToProps)(Menu)

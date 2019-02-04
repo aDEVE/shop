@@ -23,7 +23,7 @@ export const clearCart = () => ({
 
 export const deleteItemCart = productId => ({
   type: types.DELETE_TO_CART,
-  productId
+  productId,
 })
 
 export const addToCart = productId => dispatch => {

@@ -13,7 +13,7 @@ const addedIds = (state = initialState.addedIds, action) => {
         return state
       }
       return [...state, action.productId]
-    case DELETE_TO_CART :
+    case DELETE_TO_CART:
       return filter(state, s => s !== action.productId)
     default:
       return state
@@ -25,7 +25,7 @@ const quantityById = (state = initialState.quantityById, action) => {
     case ADD_TO_CART:
       const { productId } = action
       return { ...state, [productId]: (state[productId] || 0) + 1 }
-    case DELETE_TO_CART :
+    case DELETE_TO_CART:
       return omit(state, action.productId)
     default:
       return state

@@ -19,24 +19,24 @@ class Cart extends Component {
   }
 
   render() {
-    const { products, total} = this.props
+    const { products, total } = this.props
     const hasProduct = !isEmpty(products)
 
     return (
       <div>
         {!hasProduct && <Empty />}
         {products.map(p => (
-        <Card
-          key={p.name}
-          description={p.description}
-          name={p.name}
-          img={p.img}
-          onClick={() =>this.handleClickDeleteItem(p.id)}
-          price={p.price}
-          quantity={p.quantity}
-        />
+          <Card
+            key={p.name}
+            description={p.description}
+            name={p.name}
+            img={p.img}
+            onClick={() => this.handleClickDeleteItem(p.id)}
+            price={p.price}
+            quantity={p.quantity}
+          />
         ))}
-        {hasProduct && <span>TOTAL : {total} </span> }
+        {hasProduct && <span>TOTAL : {total} </span>}
         {hasProduct && (
           <button onClick={this.handleClickClear} type="button">
             Clear Cart
@@ -61,7 +61,7 @@ Cart.defaultProps = {
 
 const mapStateToProps = state => ({
   products: getCartProducts(state),
-  total: getTotal(state)
+  total: getTotal(state),
 })
 
 export default connect(
