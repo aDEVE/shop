@@ -1,0 +1,86 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "t-shirt",
+      "description": "Haec igitur prima lex toritas, eaque et adhibeatur ad monendum non modo aperte sed etiam acriter, si res postulabit, et adhibitae pareatur.",
+      "img": "https://laurentfalguiere.fr/wp-content/uploads/2018/11/tshirt.jpg",
+      "alt": "image of t-shirt",
+      "price": 14
+    },
+    {
+      "id": 2,
+      "name": "jean",
+      "description": "intellego, Patres conscripti, nos hoc temporebem innumeram mentibus ar",
+      "img": "https://www.izac.fr/media//catalog/productcache//p/d/pdh18ycone_marine-a.jpg",
+      "alt": "image of jean",
+      "price": 30
+    },
+    {
+      "id": 3,
+      "name": "sweat",
+      "description": "Et est admodum mirum videre plebem innumeram mentibus ardore quodam infuso cum dimicationum curulium eventu pendentem. haec similiaque memorabile nihil vel serium agi Romae permittunt. ergo redeundum ad textum.",
+      "img": "https://images.lookhuman.com/render/standard/5637845204080642/97200-heathered_gray-z1-t-doge.jpg",
+      "alt": "image of sweat shirt",
+      "price": 20
+    }
+  ,
+    {
+      "id": 4,
+      "name": "cap",
+      "description": "Eius populus antis, circummurana pertulm aerumnas Alpes transcendit et fretum, in iuvenem erectus et virum ex omni plaga quam orbis ambit inmensus, reportavit laureas et triumphos, iamque vergens in senium et nomine solo aliquotiens vincens ad tranquilliora vitae discessit.",
+      "img": "https://images-na.ssl-images-amazon.com/images/I/41jPOG%2BO2mL._SY355_.jpg",
+      "alt": "image of cap",
+      "price": 5
+    },
+    {
+      "id": 5,
+      "name": "beanie",
+      "description": "Ego vero sic intellego, Patres conscripti, nos hoc tempore in provinciis decernendis perpetuae pacis habere oportere rationem. Nam quis hoc non sentit omnia alia esse nobis vacua ab omni periculo atque etiam suspicione belli?",
+      "img": "https://eu.patagonia.com/dis/dw/image/v2/ABBM_PRD/on/demandware.static/-/Sites-patagonia-master/default/dw5b65387e/images/hi-res/29206_FEA.jpg?sw=750&sh=750&sm=fit&sfrm=png",
+      "alt": "image of beanie",
+      "price": 9
+    },
+    {
+      "id": 6,
+      "name": "coat",
+      "description": "Sed fruatur sane hoc solacio inusta sit, putet esse leviorem, dum modo, cuius exemplo se consolatur, eius exitum expectet, praesertim cum in Albucio nec Pisonis libidines nec audacia Gabini fuerit ac tamen hac una plaga conciderit, ignominia senatus.",
+      "img": "https://www.promod.fr/manteau-laine-gisele-by-promod--vh106822-s1-videhabite-493x530.jpg",
+      "alt": "image of coat",
+      "price": 70
+    },
+    {
+      "id": 7,
+      "name": "scarf",
+      "description": "Raptim igitur properantess difficultatibus arduis ad supticosi, qui pro muro tuetur accolas circumfusus, augente nocte adulta terrorem quievere paulisper lucem opperientes. arbitrabantur enim nullo inpediente transgressi inopino adcursu adposita quaeque vastare, sed in cassum labores pertulere gravissimos.",
+      "img": "https://lp.stories.com/app005prod?set=source[02_0247970_013_201],type[PRODUCT],device[hdpi],quality[80],ImageVersion[2018082]&call=url[file:/product/style]",
+      "alt": "image of scarf",
+      "price": 8
+    },
+    {
+      "id": 8,
+      "name": "underwear",
+      "description": "Egovinciis decernendis perpetuae pacis  igitur properantess difficultatibus arduis ad supticosi haberni periculo atque etiam suspicione belli?",
+      "img": "https://sc01.alicdn.com/kf/HTB1M.k7JVXXXXbRXXXXq6xXFXXXF.jpg",
+      "alt": "image of underwear",
+      "price": 6
+    },
+    {
+      "id": 9,
+      "name": "socks",
+      "description": "Sed fruatur sane properantess difficultatibus arduis ad supticosi, qui pro , cuius exemplo se consolatur, eius exitum expectet, praesertim cum in Albucio nec Pisonis libidines nec audacia Gabini fuerit ac tamen hac una plaga conciderit, ignominia senatus.",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz9uu-6oWuZN4FRmeSAFcB7NcJuBaxGCesubkEdRnGVaGMolJqrQ",
+      "alt": "image of socks",
+      "price": 14
+    },
+    {
+      "id": 10,
+      "name": "jogging",
+      "description": "antess difficultatibus arduis ad supticosi, qui pro , augente nocte adulta terrorem quievere paulisper lucem opperientes. arbitrabantur enim nullo inpediente transgressi inopino adcursu adposita quaeque vastare, sed in cassum labores pertulere gravissimos.",
+      "img": "https://tiboinshape.com/shop/916-home_default/jogging-noir-teamshape-.jpg",
+      "alt": "image of jogging",
+      "price": 28
+    }
+  ],
+  "cart": []
+}

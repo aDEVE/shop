@@ -9,7 +9,6 @@ shop.iml
 # testing
 /coverage
 .eslintcache
-db.json
 # production
 /build
 
